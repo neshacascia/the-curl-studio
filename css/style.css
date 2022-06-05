@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #d5d4d4;
+}
+
+header {
+    background: #382613e5;
+    backdrop-filter: saturate(180%) blur(10px);
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+nav img {
+    width: 22%;
+}
+
+nav ul {
+    display: flex;
+}
+
+li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin: 15px;
+}
+
+li a:hover {
+    color: #fff;
+}
+
+/* Home */
+#home {
+    background-image: url(../assets/vitae-london-CP0fK30hSrg-unsplash.jpg);
+    background-size: cover;
+    height: 79vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#home .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 45px;
+    width: 35%;
+    height: auto;
+    text-align: right;
+}
+
+#home h1 {
+    color: #382613;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#home h3 {
+    color: #382613;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    padding-bottom: 30px;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+input[type="button"] {
+    color: #382613;
+    border: 2px solid #382613;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    color: #fff;
+    background: #3826137a;
+}
+
+/* Covid Banner */
+.covid-banner {
+    color: #fff;
+    background: #ae9883;
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.covid-banner h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    padding-bottom: 15px;
+}
+
+.covid-banner p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+
+/* About */
+#about {
+    height: 40vh;
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome {
+    height: 100%;
+    margin: 0 150px;
+    display: flex;
+    align-items: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    line-height: 120%;
+}
+
+#about img {
+    width: 70%;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    line-height: 130%;
+}
+
+/* Services */
+#services {
+    color: #fff;
+    background: #ae9883;
+    height: 60vh;
+}
+
+#services h3 {
+    color: #382613;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.container {
+    margin: 40px 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    background: #a08871;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box img {
+    display: block;
+    margin: 20px auto;
+}
+
+.box .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+.text h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+/* Lookbook */
+#lookbook {
+    height: 130vh;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 60px 50px;
+}
+
+.grid-container img {
+    width: 28%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Contact */
+#contact {
+    width: 100%;
+    background: #ae9883;
+    height: 45vh;
+    display: flex;
+    padding-top: 50px;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+}
+
+.contact-text h4 {
+    padding-bottom: 15px;
+}
+
+.social-links img{
+    margin-top: 20px;
+    padding-right: 5px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h4 {
+    padding-bottom: 15px;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+input,
+textarea {
+    all: unset;
+    cursor: pointer;
+}
+
+input:not([type="button"]) {
+    display: block;
+    background: #a08871;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+.row-2 {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+textarea {
+    background: #a08871;
+    display: block;
+}
+
