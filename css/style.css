@@ -9,7 +9,8 @@ body {
 }
 
 header {
-    background: #382613e5;
+    /* background: #382613e5; */
+    background: rgba(53, 37, 25, 0.932);
     backdrop-filter: saturate(180%) blur(10px);
     height: 8vh;
     position: fixed;
@@ -209,7 +210,7 @@ p {
 #services h3 {
     color: #382613;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 45px;
 }
 
 .container {
@@ -249,7 +250,7 @@ p {
 
 /* Lookbook */
 #lookbook {
-    height: 130vh;
+    height: 140vh;
     text-align: center;
     padding-top: 60px;
 }
@@ -272,7 +273,7 @@ p {
 #contact {
     width: 100%;
     background: #ae9883;
-    height: 43vh;
+    height: 48vh;
     display: flex;
     padding-top: 50px;
 }
